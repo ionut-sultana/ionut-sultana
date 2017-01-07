@@ -7,6 +7,9 @@
 		text-align: center;
 		font-weight:500;
 	}
+	&__blue{
+		color:$blue;
+	}
 	&__icon{
 		position: relative;
 		margin-left: auto;
@@ -16,6 +19,8 @@
 		margin-bottom: 1rem;
 		@mixin atSmall{
 			margin-top: 0;
+			position: relative;
+			top: 14px;
 			margin-right: 10px;
 			margin-bottom: 0;
 			display: inline-block;
@@ -23,6 +28,7 @@
 	}
 	@mixin atSmall{
 		font-size: 3.75rem;
-		margin-bottom: 0;
+		margin-bottom: 3.75rem;
+		
 	}
 }
