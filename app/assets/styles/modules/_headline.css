@@ -1,39 +1,50 @@
-.headline{
-	font-weight: 300;
-	font-size: 1.9rem;
-	color: $blue;
-	&__no-t-margin{
-		margin-top: 0.77em;
-	}
-	@mixin atSmall{
-		font-size: 2.875rem;
-		&__no-t-margin{
-			margin-top: 0;
-		}
-	}
-	&__center{
-		text-align: center; 
-	}
-	&__orange{
-		color:$orange;
-	}
-	&__small{
-		font-size: 1.275em;
-		@mixin atSmall{
-			font-size: 1.875em;
-		}
-	}
-	&__narrow{
-		max-width: 500px;
-		margin: 0 auto;
-	}
-	&__light{
-		font-weight: 100;
-	}
-	&__b-margin-small{
-		margin-bottom: 0.5em;
-	}
-	&__b-margin-large{
-		margin-bottom: 1.6em;
-	}
+.headline {
+  font-size: 1.9rem;
+  font-weight: 300;
+  color: $mainBlue;
+
+  @mixin atSmall {
+    font-size: 2.875rem;
+  }
+
+  &--centered {
+    text-align: center;
+  }
+
+  &--orange {
+    color: $mainOrange;
+  }
+
+  &--small {
+    font-size: 1.2rem;
+    @mixin atSmall {
+      font-size: 1.875rem;
+    }
+  }
+
+  &--narrow {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--light {
+    font-weight: 100;
+  }
+
+  strong {
+    font-weight: 400;
+  }
+
+  &--b-margin-small {
+    margin-bottom: .5em;
+  }
+
+  &--b-margin-large {
+    margin-bottom: 1.6em;
+  }
+
+  &--no-t-margin {
+    margin-top: 0;
+  }
 }
