@@ -4,10 +4,39 @@
 		background: $blue;
 		color: #FFF;
 	}
+
+	&--testimonials{
+		@mixin atLarge{
+		background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		}
+		background-color: #fff;
+	} 
+
 	@mixin atSmall{
 		padding: 1.5rem 0;
 	}
 	@mixin atMedium{
+		padding: 3.5rem 0;
+	}
+
+	@mixin atLarge{
 		padding: 4.5rem 0;
+	}
+
+	&--no-b-until-medium{ 
+		padding-bottom: 0;
+		@mixin atMedium{
+			padding-bottom: 4.5rem;
+		}
+	}
+	
+	&--no-b-until-large{ 
+		padding-bottom: 0;
+		@mixin atLarge{
+			padding-bottom: 4.5rem;
+		}
 	}
 }
