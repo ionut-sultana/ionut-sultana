@@ -1087,3 +1087,35 @@ Instead edit gulp/templates/sprite */
     height: 42px;
     background-position: 36.69752421959096% 45.792307692307695%;
   }
+
+.site-footer{
+	background:#2f5572;
+	color:white; 
+	padding: 1.15rem 0 0;
+	text-align: center;
+}
+
+.site-footer p{
+  margin-top: 0;
+  font-weight: 200;
+}
+
+.site-footer p a{
+  font-weight: normal;
+  margin-left: 0px;
+  display: table;
+  margin: 10px auto;
+  margin-top: 10px;
+}
+
+@media (min-width: 800px) {
+
+  .site-footer p {
+    margin-top: 0;
+  }
+
+  .site-footer p a {
+    margin-left: 10px;
+    display: inline-block;
+  }
+}
