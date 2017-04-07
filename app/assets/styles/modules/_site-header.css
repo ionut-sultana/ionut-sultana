@@ -16,6 +16,19 @@
 	}
 	@mixin atMedium {
 		background-color:rgba(47,85,114,0.3);
+		position:fixed;
+		&--dark{
+			background-color: rgba(23,51,72,0.85);
+			.site-header__logo{
+				transform:scale(.565);
+			}
+		}
+		&--orange{
+			.site-header__logo{
+				transform:scale(.565);
+			}
+			background-color:rgba(213, 149, 65, 0.85);
+		} 
 		&__menu-content{
 			display: block;
 		}
@@ -86,6 +99,7 @@
 	&__logo{
 		top: 0;
 		left: 50%;
+		transition:all 0.3s;
 		@mixin atMedium {
 			left: auto;
 	        transform: translateX(0);
