@@ -4,6 +4,7 @@
   "dependencies": {
     "jquery": "^2.2.4",
     "normalize.css": "^4.1.1",
+    "picturefill": "^3.0.2",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
