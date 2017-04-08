@@ -9,6 +9,17 @@
   &--medium {
     max-width: 976px;
   }
+  &--narrow{
+    max-width: 450px;
+    width: 100%;
+  }
+
+  &--center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%)
+  }
 
   &--no-padding-until-medium {
     padding-left: 0;
