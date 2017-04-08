@@ -7,9 +7,11 @@ class StickyHeader {
 	constructor(elem) {
 		this.element = $(elem)
 		console.log(this.element); 
-		this.siteHeader = $('.site-header') ;        
+		this.siteHeader = $('.site-header') ;   
+		this.lazyImages = $('.lazyload');    
 		this.pageSections = $('.page-section');
 		this.headerLinks = $('.primary_nav a');
+		this.refreshWaypoint();
 		this.createHeaderWaypoiny();
 		this.createPageSectionWaypoints();
 	}
@@ -17,6 +19,12 @@ class StickyHeader {
 
 	addSmoothscroll(){
 		this.headerLinks.smoothScroll();
+	}
+
+	refreshWaypoint(){
+		this.lazyImages.load(function(){
+			Waypoint.refreshAll();
+		})
 	}
 
 	createHeaderWaypoiny(){

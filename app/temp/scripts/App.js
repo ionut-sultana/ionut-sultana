@@ -10806,8 +10806,10 @@
 			this.element = (0, _jquery2.default)(elem);
 			console.log(this.element);
 			this.siteHeader = (0, _jquery2.default)('.site-header');
+			this.lazyImages = (0, _jquery2.default)('.lazyload');
 			this.pageSections = (0, _jquery2.default)('.page-section');
 			this.headerLinks = (0, _jquery2.default)('.primary_nav a');
+			this.refreshWaypoint();
 			this.createHeaderWaypoiny();
 			this.createPageSectionWaypoints();
 		}
@@ -10816,6 +10818,13 @@
 			key: 'addSmoothscroll',
 			value: function addSmoothscroll() {
 				this.headerLinks.smoothScroll();
+			}
+		}, {
+			key: 'refreshWaypoint',
+			value: function refreshWaypoint() {
+				this.lazyImages.load(function () {
+					Waypoint.refreshAll();
+				});
 			}
 		}, {
 			key: 'createHeaderWaypoiny',
