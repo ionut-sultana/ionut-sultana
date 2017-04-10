@@ -20,12 +20,12 @@
 		&--dark{
 			background-color: rgba(23,51,72,0.85);
 			.site-header__logo{
-				transform:scale(.565);
+				transform:scale(.56);
 			}
 		}
 		&--orange{
 			.site-header__logo{
-				transform:scale(.565);
+				transform:scale(.56);
 			}
 			background-color:rgba(213, 149, 65, 0.85);
 		} 
